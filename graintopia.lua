@@ -299,7 +299,7 @@ function draw_message()
     screen.text_center(show_message_text)
     if show_message_progress~=nil and show_message_progress>0 then
       -- screen.update()
-      screen.blend_mode(13)
+      screen.blend_mode(14) --changed from 13, fix for norns v2.9.2
       screen.rect(x-w/2,y,w*(show_message_progress/100)+2,9)
       screen.level(math.floor(screen_fade_in*2/3))
       screen.fill()
