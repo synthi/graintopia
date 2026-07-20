@@ -477,7 +477,7 @@ function Land:redraw()
   screen.blend_mode(0)
   self.waveform:redraw(32,32)
   if next(self.endpoints)~=nil then
-    screen.blend_mode(5)
+    screen.blend_mode(13)
     local y=9
     local l=1
     for i=1,#self.endpoints,2 do
